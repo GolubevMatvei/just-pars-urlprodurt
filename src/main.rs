@@ -226,7 +226,7 @@ fn main() -> Result<(), Box<dyn std::error::Error> > {
 
     //Создаем Value::Object
     let mut json_value = serde_json::Value::Object(serde_json::Map::new());
-    json_value.as_object_mut().unwrap().insert("Товары".into(), product_value);
+    json_value.as_object_mut().unwrap().insert("Товар".into(), product_value);
 
     //Сохраняем json файл в директорию output
     File::create(output.with_file_name("urlList.json"))?.write_all(json_value.to_string().as_bytes())?;    
