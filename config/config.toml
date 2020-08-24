@@ -1,0 +1,7 @@
+[login_and_pasword]
+login = "info@neovolt.ru"
+pasword = "1016881"
+
+[parsset]
+outdir = "parserdir"
+sleep = 0.0
